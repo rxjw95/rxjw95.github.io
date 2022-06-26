@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast"
+minimal_mistakes_skin    : "default"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -25,7 +25,7 @@ url                      : "https://rxjw95.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "rxjw95/rxjw95.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/favicon.png"
+logo                     : "/images/profile/favicon.png"
 masthead_title           : "수포자 공대생" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -105,12 +105,12 @@ analytics:
 # Site Author
 author:
   name             : "silly"
-  avatar           : "/assets/images/avatar.jpeg"
+  avatar           : "/images/profile/avatar.jpeg"
   bio              : "원론적인 탐구를 좋아하는 멍청한 서버 개발자💻"
   location         : "Seoul, Republic of Korea"
   email            :
   links:
-    - label: "Email"
+    - label: "rxjw95@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:rxjw95@gmail.com"
     - label: "Blog"
