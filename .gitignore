@@ -1,0 +1,11 @@
+_site/*.xml
+_site/*.txt
+
+_site/assets/js/lunr/lunr-en.js
+_site/assets/js/lunr/lunr-gr.js
+_site/assets/js/lunr/lunr-store.js
+
+.DS_Store
+
+.idea/
+
