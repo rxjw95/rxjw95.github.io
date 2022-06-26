@@ -128,7 +128,8 @@
   height: 36px;
 
   @include breakpoint($large) {
-    display: block;
+    display: flex;
+    justify-content: center;
     width: auto;
     height: auto;
   }
@@ -168,6 +169,8 @@
   margin: 0;
 
   @include breakpoint($large) {
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -181,6 +184,8 @@
   margin: 0;
 
   @include breakpoint($large) {
+    padding-left: 25px;
+    padding-right: 15px;
     margin-top: 10px;
     margin-bottom: 20px;
   }
