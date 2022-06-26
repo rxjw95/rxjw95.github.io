@@ -1,7 +1,7 @@
 ---
 title: "Who am i"
 permalink: /about/
-layout: single
+author_profile: false
 ---
 
 about page
