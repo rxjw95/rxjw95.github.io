@@ -3,12 +3,6 @@ main:
   - title: "Posts"
     url: https://rxjw95.github.io/
 
-  - title: "Category"
-    url: /categories/
-
-  - title: "Tags"
-    url: /tags/
-
   - title: "About"
     url: /about/
 
