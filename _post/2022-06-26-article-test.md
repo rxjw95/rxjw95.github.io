@@ -1,12 +1,10 @@
 ---
-categories:
-  - 있을까?
-
 tags:
   - first
   - Second
 
 title:  "안드로이드에 대해서"
+
 ---
 
 # 제목 1
