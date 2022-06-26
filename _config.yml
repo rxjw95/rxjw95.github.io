@@ -24,8 +24,8 @@ description              : "개발 일지"
 url                      : "https://rxjw95.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "rxjw95/rxjw95.github.io"
-teaser                   : "/assets/images/teaser.jpeg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/favicon.png"
+teaser                   : "/_site/assets/images/teaser.jpeg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/_site/assets/images/favicon.png"
 masthead_title           : "수포자 공대생" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "silly"
-  avatar           : "/assets/images/avatar.jpeg"
+  avatar           : "/_site/assets/images/avatar.jpeg"
   bio              : "원론적인 탐구를 좋아하는 멍청한 서버 개발자"
   location         : "Seoul, Republic of Korea"
   email            : "rxjw95@gmail.com"
@@ -113,7 +113,7 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:rxjw95@gmail.com"
-    - label: "Website"
+    - label: "Blog"
       icon: "fas fa-fw fa-link"
       url: "https://rjvv.tistory.com/"
     - label: "Twitter"
@@ -290,3 +290,5 @@ defaults:
       comments: # true
       share: true
       related: true
+      toc: true
+      toc_sticky : false
