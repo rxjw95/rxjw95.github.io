@@ -11,14 +11,23 @@ permalink: /about/
 - 모르는 것, 실패, 실수에 대한 두려움이 있어도, 이를 극복해나가는 과정에서 더 큰 동기부여와 배움을 얻는 편입니다.
 - `운동🏄‍♂️`과 `수다🤭`를 좋아합니다.
 
+</br></br>
+
+
 ### Channel
 
 - **Github : [https://github.com/rxjw95](https://github.com/rxjw95)**
 - **Blog : [https://rjvv.tistory.com/](https://rjvv.tistory.com/)**
 
+</br></br>
+
+
 ### Contact
 
 - **E-mail** : [**rxjw95@gmail.com**](mailto:rxjw95@gmail.com)
+
+</br></br>
+
 
 # 🛒 SKILLS
 
@@ -33,6 +42,8 @@ permalink: /about/
 
 - Java[8, 11, 17], Kotlin
 - Spring MVC, Spring boot, Spring Data JPA, SAML, OAuth2, Redis, MySQL, PostgreSQL
+
+</br></br>
 
 # 🏙 Work Project
 
@@ -64,6 +75,7 @@ permalink: /about/
     - user event handling 관련 action 모듈 개발
     - 소프트웨어 품질 지표 분석 결과 excel 추출 모듈 개발
 
+</br></br>
 
 # 🎞 Personal Project
 
@@ -108,6 +120,8 @@ permalink: /about/
     - SaSS, styled-components 학습
     - context API 활용
 
+</br></br>
+
 # 🏯 Path
 
 ---
@@ -131,7 +145,7 @@ permalink: /about/
 
 2014.03 ~ 2020.02
 
-- 대학생 논문경진대회 금상, CNN 기반 차량 인식 시스템
+- 대학생 논문경진대회 금상, CNN 기반 차량 인식 시스템 개발
 - 아이디스 아이디어 공모전 우수상, OCR 기반 유해성분 주의 앱
-- 기상청 창업경진대회 참가, 날씨 정보를 결합한 스포츠 업체 예약 앱
+- 기상청 창업경진대회 참가, 날씨 정보를 결합한 스포츠 업체 예약 앱 개발
 - 학부 Java 코딩 멘토 참여
