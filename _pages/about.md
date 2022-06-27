@@ -56,9 +56,9 @@ permalink: /about/
 👉[**openPMS Link**](https://sds.openpms.team/#/PGE_PSZ_LoginPage?ssoLogin=false)
 
 - **B2B 프로젝트 관리 시스템**
-    - 프로젝트 피쳐 개발 및 운영
+    - 개발 및 운영
     - 회원 가입 인증 (JWT, Redis를 활용한 이메일 링크 인증)
-    - 아이디 찾기/비밀번호 찾기 인증 (6자리 랜덤 번호 인증, 이메일 토 큰크증)
+    - 아이디 찾기/비밀번호 찾기 인증 (6자리 랜덤 번호 인증, 이메일 토큰 인증)
     - 세션 기반 → JWT 기반 전환 (중복 로그인, 세션 만료, 로그아웃 기능을 위한 white list, black list token flow + redis)
     - 레거시 JWT 로직 재개발 및 레디스 로직 리팩토링
     - 삼성망 통합 인증 서비스(SSO) SAML 기반 인증 개발
