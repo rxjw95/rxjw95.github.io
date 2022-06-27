@@ -11,7 +11,7 @@ permalink: /about/
 - 모르는 것, 실패, 실수에 대한 두려움이 있어도, 이를 극복해나가는 과정에서 더 큰 동기부여와 배움을 얻는 편입니다.
 - `운동🏄‍♂️`과 `수다🤭`를 좋아합니다.
 
-</br></br>
+<br>
 
 
 ### Channel
@@ -19,14 +19,14 @@ permalink: /about/
 - **Github : [https://github.com/rxjw95](https://github.com/rxjw95)**
 - **Blog : [https://rjvv.tistory.com/](https://rjvv.tistory.com/)**
 
-</br></br>
+<br>
 
 
 ### Contact
 
 - **E-mail** : [**rxjw95@gmail.com**](mailto:rxjw95@gmail.com)
 
-</br></br>
+<br><br>
 
 
 # 🛒 SKILLS
@@ -43,7 +43,7 @@ permalink: /about/
 - Java[8, 11, 17], Kotlin
 - Spring MVC, Spring boot, Spring Data JPA, SAML, OAuth2, Redis, MySQL, PostgreSQL
 
-</br></br>
+<br><br>
 
 # 🏙 Work Project
 
@@ -75,7 +75,7 @@ permalink: /about/
     - user event handling 관련 action 모듈 개발
     - 소프트웨어 품질 지표 분석 결과 excel 추출 모듈 개발
 
-</br></br>
+<br><br>
 
 # 🎞 Personal Project
 
@@ -120,7 +120,7 @@ permalink: /about/
     - SaSS, styled-components 학습
     - context API 활용
 
-</br></br>
+<br><br>
 
 # 🏯 Path
 
