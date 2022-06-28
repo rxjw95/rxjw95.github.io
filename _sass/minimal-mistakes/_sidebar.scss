@@ -94,6 +94,10 @@
         .toc__menu {
           overflow-y: auto;
           max-height: calc(100vh - 7em);
+
+          li {
+            font-size: .6rem;
+          }
         }
       }
     }
