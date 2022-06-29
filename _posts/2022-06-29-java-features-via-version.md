@@ -322,7 +322,7 @@ void text_block() {
 
 ---
 
-### **Java 14 (~2020년 9월 지원 종료)**
+### **Java 14 (2020년 9월 지원 종료)**
 
 -   **Switch Expression 사용 가능 (정식)**
 -   **Pattern Matching for instanceof 추가**  
