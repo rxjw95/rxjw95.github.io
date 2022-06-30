@@ -3,7 +3,7 @@
 title: JLS, JSR, JEP
 excerpt: Java version migration 중 아래와 같은 명세 관련 용어들을 접하는데, 각각의 용어들이 무엇을 뜻하는지 알아보도록 한다.
 categories: [java]
-tags: [specification]
+tags: [specification, glossary]
 
 ---
 
