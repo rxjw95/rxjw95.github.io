@@ -86,15 +86,6 @@ class AccountRunnable implements Runnable {
 
 ```
 
-```java
-public class SubThread extends Thread {
-    @Override
-    public void run() {
-        IntStream.range(0, 5).forEach(idx -> System.out.println("subThread: " + idx));
-    }
-}
-```
-
 ### wait, notify
 
 `syncronized`로 공유 데이터를 보호하게 된 건 좋다. 하지만, 특정 스레드가 객체의 락을 가진 상태로 특정 상태를 위해 대기를 하게 되면 무한 대기 현상이 발생할 것이다.
