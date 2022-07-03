@@ -1,6 +1,6 @@
 ---
 
-title: 자바의 정석 3권 - synchronization(1)
+title: 자바의 정석 3권 - synchronization(2)
 excerpt: 다시보는 자바의 정석 3판
 categories: [java, book]
 tags: [essential]
