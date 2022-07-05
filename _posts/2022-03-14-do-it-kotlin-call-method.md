@@ -73,7 +73,7 @@ fun printInfo(name:String, email:String = "nothing"): Unit {
 
 코틀린은 함수 파라미터에 vararg 키워드를 사용해서 가변 인자를 전달받는다.
 
-```
+```kotlin
 fun main() {
     assignNumber(1, 2, 3, 4, 5);
 }
