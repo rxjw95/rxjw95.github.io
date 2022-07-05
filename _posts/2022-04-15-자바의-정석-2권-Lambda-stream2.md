@@ -159,6 +159,31 @@ T 타입 받아서 기본형 리턴
 - LongSupplier
 - DoubleSupplier
 
+## 메서드 참조
+
+람다식도 간단한데, 더 간단한 표현 방법이 있다.
+
+바로 메서드 참조라는 것인데, 아주 간단하게 작성할 수 있다.
+
+다음의 코드를 보자.
+
+```java
+Function<String, Integer> lambda = s -> Integer.parseInt(s);
+Function<String, Integer> methodRef = Integer::parseInt;
+```
+
+위의 코드를 보면 람다식의 일부가 생략되었지만, 컴파일러가 이를 유추를 할 수 있다.
+
+`parseInt`라는 메서드를 통해서 혹은 좌변의 Function의 제네릭 타입으로 쉽게 파악할 수 있다.
+
+3가지 경우의 메서드 참조 방법이 있다.
+
+|     category      |           lambda           |    method ref.    |
+|:-----------------:|:--------------------------:|:-----------------:|
+|    스태틱 메서드 참조     | (x) -> ClassName.method(x) | ClassName::method |
+|    인스턴스 메서드 참조    | (obj, x) -> obj.method(x)  | ClassName::method |
+| 특정 객체 인스턴스 메서드 참조 |    (x) -> obj.method(x)    |    obj::method    |
+
 ---
 
 틀린 점이나 보충해주실 점이 있다면 지적해주시길 바랍니다.
