@@ -41,7 +41,7 @@ array 타입으로 query에 전달하면 key는 `param[]`으로 등록된다.
 ### 브라우저에서 하나의 문자열로 보내는 경우
 
 ```javascript
-query: { param } // param: 1, 2, 3
+query: { param } // param: "1, 2, 3"
 ```
 
 ```java
