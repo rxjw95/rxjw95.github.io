@@ -34,8 +34,7 @@ at com.sds.promise.workflow.model.request.WorkflowNodeRequestTest$progress.given
 ### 조치 방법
 
 1. GraamVM 가이드에서 Nashorn 호환 모드 지원 (부득이한 경우에만 사용)
-
-[https://github.com/graalvm/graaljs/blob/master/docs/user/NashornMigrationGuide.md](https://github.com/graalvm/graaljs/blob/master/docs/user/NashornMigrationGuide.md)
+   [NashornMigrationGuide](https://github.com/graalvm/graaljs/blob/master/docs/user/NashornMigrationGuide.md)
 
 2. @ScriptAssert 제거, 및 @Valid 및 try/catch로 검증
 
