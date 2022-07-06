@@ -1,6 +1,6 @@
 ---
 
-title: HV000170: No JSR-223 scripting engine could be bootstrapped for language
+title: [ERROR] No JSR-223 scripting engine could be bootstrapped for language
 excerpt: JDK17 마이그레이션 중 발견한 호환성 문제  
 categories: [java]
 tags: [error]
