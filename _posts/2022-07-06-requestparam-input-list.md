@@ -2,8 +2,8 @@
 
 title: RequestParam으로 List 형식 받기
 excerpt: GET method를 사용해서 많은 List를 받아와야 하는데, RequestBody는 안되고...  
-categories: [java]
-tags: [features]
+categories: [java, spring]
+tags: [spring]
 
 ---
 
