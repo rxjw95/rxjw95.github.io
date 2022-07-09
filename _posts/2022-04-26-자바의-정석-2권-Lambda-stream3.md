@@ -42,16 +42,36 @@ Stream에는 아주 다양한 메서드들이 존재하는데, 메서드 명을 
 ## 스트림 만들기
 
 ### 컬렉션
-
+```java
+Stream<T> Collection.stream()
+```
 
 ### 배열
+```java
+Stream<T> Stream.of(T[])
+Stream<T> Stream.of(T... values)
+Stream<T> Arrays.steram(T[])
+Stream<T> Arrays.steram(T[], int startInclusive, int endExclusive)
 
+```
 
 ### 특정 범위의 정수
+```java
+IntStream IntStream.range(int begin, int end)
+IntStream IntStream.rangClosed(int begin, int end)
+```
 
 ### 임의의 수
+```java
+IntStream new Random().ints() // 무한 스트림
+LongStream new Random().longs()
+DoubleStream new Random().doubles()
+```
+
+> Random 클래스로 임의의 수 스트림을 만들면 무한 스트림이 반환되어 반드시 limit()으로 개수를 제한해줘야 한다.
 
 ### iterate(), generate()
+
 
 ### 파일
 
