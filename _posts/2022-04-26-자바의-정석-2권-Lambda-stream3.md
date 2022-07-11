@@ -177,18 +177,49 @@ Stream.of(new String[]{"a", "c", "z", "d"}, new String[]{"x", "AA", "Ca", "ac"})
 ## 스트림 최종연산
 
 ### forEach()
-
+`Consumer<? extends T>`를 파라미터로 받아 요소를 소비해 내부 반복을 해주는 메서드이다.
 
 ### 조건 검사 - allMatch(), anyMatch(), noneMatch(), findFirst(), findAny()
+`allMatch`는 Predicate<T>의 조건에 요소 모두가 일치하다면 참을 반환한다.
+`anyMatch`는 Predicate<T>의 조건에 요소 하나라도 일치한다면 참을 반환한다.
+`noneMatch`는 Predicate<T>의 조건에 요소 모두가 일치하지 않는다면 참을 반환한다.
 
+`findFirst()`와 `findAny()`는 `Optional<T>`를 반환하여 후처리할 수 있다.
 
 ### 통계 - count(), sum(), average(), max(), min()
+`count`는 스트림에 있는 요소 개수를 반환한다.
+`sum`은 기본형 스트림에 있는 요소 합계를 반환한다.
+`average`도 기본혀 스트림에 있는 요소 평균을 반환한다.
+`max`와 `min`은 `Comparator<? super T>`를 받아 스트림 요소의 최대, 최소를 반환한다.
 
 ### 누산 - reduce
+스트림의 요소를 하나씩 줄여나가면서 연산을 수행하고 최종 결과를 반환한다.
 
+여러 종류로 나뉘어 있는데, 하나씩 간단하게 설명한다.
 
+```java
+Optional<T> reduce(BinaryOperator<T> acc);
+T reduce(T identity, BinaryOperator<T> acc);
+U reduce(U identity, BiFunction<U, T, U> acc, BinaryOperator<U> combiner)
+```
 
+보시다시파, BinaryOperator 하나만을 사용하는 reduce는 Optional로 받는다. 
+그 이유는 identity라는 고유값이 없기 때문에 요소를 reduce해서 그 결과를 장담할 수 없기 때문이다.
+```java
+Stream.of(1, 2, 3)
+                .reduce((a, b) -> a + b)
+                .ifPresent(System.out::println);
+```
 
+반면에, identity와 BinaryOperator, 두 개의 파라미터를 받으면 Optional이 아니다. 
+그 이유는 identity라는 고유값이 있기 때문에 요소가 없어서 그 결과는 고유값이 되기 때문이다.
+```java
+Stream.of(1, 2, 3)
+                .reduce(0, (a, b) -> a + b)
+```
+
+마지막으로, combiner가 추가되어, 세 개의 파라미터를 받는 reduce는 병렬 스트림의 결과를 합칠 때 사용한다.
+추후에 Collect()를 포스팅할 때 추가적으로 설명한다.
 
 마지막으로 스트림 최종 연산에서 가장 많이 사용되는 Collect()에 대해서는 활용성이 많아서 따로 포스팅을 진행할 예정이다.
 
