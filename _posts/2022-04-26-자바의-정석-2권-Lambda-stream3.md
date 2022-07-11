@@ -72,22 +72,125 @@ DoubleStream new Random().doubles()
 
 ### iterate(), generate()
 
+```java
+static <T> Stream<T> iterate(T seed, UnaryOperator<T> func)
+static <T> Stream<T> generate(Supplier<T> s)
+```
 
-### 파일
+`iterate`는 seed 값을 받아 지정된 값으로부터 시작해서, 람다식 func에 의해 계산된 결과를 seed값으로 해서 계산을 반복한다.
 
+```java
+public Stream<Integer> evenIterate() {
+        return Stream.iterate(0, n -> n + 2);
+    }
+```
 
-### 빈 스트림
+`generate`는 매개변수를 보면 알다시피 매개변수가 없는 Supplier로 값을 만들어낸다.
 
-### 두 스트림의 연결
+```java
+   public Stream<Integer> randomGenerate(int begin, int end) {
+        return Stream.generate(() -> {
+            try {
+                return SecureRandom.getInstanceStrong().nextInt(begin, end);
+            } catch (NoSuchAlgorithmException e) {
+                throw new RuntimeException(e);
+            }
+        });
+    }
+```
 
 ## 스트림 중간연산
 
+### 자르기 - skip(), limit()
+여러 개의 요소를 가진 스트림에서 n개를 자른 스트림을 반환하는 메서드들이다.
+
+`skip`은 첫 요소로부터 n개를 무시할 수 있고, `limit`는 최대 n개의 요소를 남기고 나머지는 자르고 반환한다.
+
+```java
+Stream<Integer> intStream = Stream.of(1, 2, 3, 4, 5).skip(3); // 4, 5
+        
+Stream<Integer> intStream = Stream.of(1, 2, 3, 4, 5).limit(3); // 1, 2, 3 
+```
+
+
+### 거르기 - filter(), distinct()
+원하는 조건에 맞춰서 요소를 걸러낼 수 있는 메서드들이다.
+
+`distinct`는 중복 요소를 제거하고, `filter`는 Predicate로 조건에 맞지 않는 값은 걸러낸다.
+
+```java
+Stream.of(1, 1, 1, 2, 2, 3, 3, 3).distinct() // 1, 2, 3
+```
+
+```java
+enum Predicates{
+    EVEN(i -> i % 2 == 0), ODD(i -> i % 2 != 0);
+
+    private final Predicate<Integer> predicate;
+
+    Predicates(Predicate<Integer> predicate) {
+        this.predicate = predicate;
+    }
+
+    public Predicate<Integer> match() {
+        return predicate;
+    }
+}
+
+Stream.of(1, 2, 3).filter(Predicates.EVEN.match()); // 2
+```
+
+### 정렬 - sorted()
+`sorted()`는 사전순 정렬
+`sorted(Comparator<? super T> comparator)`은 정렬 기준을 커스터마이징할 수 있다.
+
+```java
+Stream.of("a", "c", "z", "d", "x", "AA", "Ca", "ac").sorted();
+Stream.of("a", "c", "z", "d", "x", "AA", "Ca", "ac").sorted(Comparator.reverseOrder()); // 역순 정렬
+```
+
+### 변환 - map(), flatMap(), peek()
+
+`map`은 스트림 요소를 다른 값이나 다른 타입으로 변환할 때 사용하는 메서드이다.
+
+```java
+Stream.of("1", "2", "3").map(Integer::parseInt);
+```
+
+`peek`은 연산과 연산 사이에 올바르게 처리되었는지, 디버그용으로 값을 출력해볼 때 사용하는 메서드이다.
+
+```java
+Stream.of("1", "2", "3")
+                .map(Integer::parseInt)
+                .peek(System.out::println)
+                .filter(Predicates.ODD.match())
+```
+
+`flatMap`은 스트림의 요소가 배열인 경우(`Stream<T[]>`), 그 요소들을 모두 펼칠 때(`Stream<T>`) 사용하는 메서드이다.
+
+```java
+Stream.of(new String[]{"a", "c", "z", "d"}, new String[]{"x", "AA", "Ca", "ac"})
+                .flatMap(Arrays::stream)
+                .map(str -> str.substring(0, 1));
+```
+
 ## 스트림 최종연산
 
+### forEach()
+
+
+### 조건 검사 - allMatch(), anyMatch(), noneMatch(), findFirst(), findAny()
+
+
+### 통계 - count(), sum(), average(), max(), min()
+
+### 누산 - reduce
 
 
 
-마지막으로 스트림 최종 연산에서 가장 많이 사용되는 Collector()에 대해서는 활용성이 많아서 따로 포스팅을 진행할 예정이다.
+
+
+마지막으로 스트림 최종 연산에서 가장 많이 사용되는 Collect()에 대해서는 활용성이 많아서 따로 포스팅을 진행할 예정이다.
 
 ---
 
