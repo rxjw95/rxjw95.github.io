@@ -219,6 +219,7 @@ const StyledMarkdown = styled.div`
   & a {
     padding: 1.6px 0;
     color: ${props => props.theme.colors.text};
+    word-break: break-all;
   }
 
   & a:hover {
