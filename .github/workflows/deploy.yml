@@ -13,6 +13,8 @@ jobs:
         with:
           repository: rxjw95/rxjw95.github.io
           token: ${{ secrets.API_KEY}}
+          ref: main
+          username: rxjw95
       - run: git config --global user.email "rxjw95@gmail.com"
       - run: git config --global user.name "rxjw95"
 
