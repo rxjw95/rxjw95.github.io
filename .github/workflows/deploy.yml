@@ -9,7 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - run: git config --global user.email "rxjw95@gmail.com"
+      - run: git config --global user.name "woogie"
+
       - uses: actions/setup-node@v2
         with:
           node-version: 20.3.1
