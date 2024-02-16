@@ -1,10 +1,10 @@
-import React, { useEffect } from "react"
+import React, { useLayoutEffect } from "react"
 import { ThemeProvider } from "styled-components"
 
-import { useSelector, useDispatch } from "react-redux"
-import { setLight, setDark } from "reducers/theme"
+import { useDispatch, useSelector } from "react-redux"
+import { setDark, setLight } from "reducers/theme"
 
-import { light, dark } from "assets/theme"
+import { dark, light } from "assets/theme"
 
 import GlobalStyles from "components/GlobalStyles"
 
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
     localStorage.setItem("theme", nextTheme)
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (isSystemDarkMode && !localTheme)
       dispatch(isSystemDarkMode ? setDark : setLight)
     else if (localTheme) dispatch(localTheme === "dark" ? setDark : setLight)

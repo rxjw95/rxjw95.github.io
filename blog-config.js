@@ -17,7 +17,7 @@ module.exports = {
     link: "https://rxjw95.github.io",
   },
   utterances: {
-    repo: "rxjw95/devlog",
+    repo: "rxjw95/rxjw95.github.io",
     type: "pathname",
   },
 }
