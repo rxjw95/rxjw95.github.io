@@ -1,5 +1,5 @@
 export const initialState = {
-  theme: localStorage.getItem('theme')
+  theme: 'light'
 }
 
 // action type 정의
