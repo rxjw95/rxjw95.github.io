@@ -10,13 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          repository: rxjw95/rxjw95.github.io
-          token: ${{ secrets.API_KEY}}
-          ref: main
-          username: rxjw95
       - run: git config --global user.email "rxjw95@gmail.com"
       - run: git config --global user.name "rxjw95"
+      - run: git config --global url.https://${{secrets.API_KEY}}@github.com/.insteadOf https://github.com/
 
       - uses: actions/cache@v3
         with:
