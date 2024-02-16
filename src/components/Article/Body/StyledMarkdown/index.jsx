@@ -136,7 +136,6 @@ const StyledMarkdown = styled.div`
     padding: 3px 5px 3px 5px;
     font-size: 13px;
     background-color: ${props => props.theme.colors.inlineCodeBackground};
-    font-weight: bold;
     color: ${props => props.theme.colors.text};
   }
 
