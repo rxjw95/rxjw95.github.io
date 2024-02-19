@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of yield]]></title><description><![CDATA[파이어족을 꿈꾸는 삽질 4년차 서버 개발자입니다.]]></description><link>https://rxjw95.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 19 Feb 2024 14:17:42 GMT</lastBuildDate><item><title><![CDATA[Adapter Pattern]]></title><description><![CDATA[GoF…]]></description><link>https://rxjw95.github.io/adapter-pattern/</link><guid isPermaLink="false">https://rxjw95.github.io/adapter-pattern/</guid><pubDate>Sat, 17 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;GoF 책에서는 다음과 같이 어댑터 패턴의 의도를 밝힌다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of yield]]></title><description><![CDATA[파이어족을 꿈꾸는 삽질 4년차 서버 개발자입니다.]]></description><link>https://rxjw95.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 19 Feb 2024 14:19:52 GMT</lastBuildDate><item><title><![CDATA[Adapter Pattern]]></title><description><![CDATA[GoF…]]></description><link>https://rxjw95.github.io/adapter-pattern/</link><guid isPermaLink="false">https://rxjw95.github.io/adapter-pattern/</guid><pubDate>Sat, 17 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;GoF 책에서는 다음과 같이 어댑터 패턴의 의도를 밝힌다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;클래스의 인터페이스를 사용자가 기대하는 인터페이스 형태로 변환 시킵니다.&lt;br&gt;
 서로 일치하지 않는 인터페이스를 갖는 클래스들을 함께 동작시킵니다.&lt;/p&gt;
@@ -74,7 +74,20 @@
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/62179353/196026889-20531a01-1b11-4e2a-813d-bcfceb88a12c.png&quot; alt=&quot;구조&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
+      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/4dc33b3cdbf494a02953cce7dad6b296/c371b/adapter-image-1.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 40%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABR0lEQVR42pVR2W6DMBDkl0rAgVwEbO77CESgJlGTh/b/P2C6NmkVKQ9pH0Zej3fXO7MaswL8wFz6WO9iJFmJMO0QFQdYqxCPOa+gMZuCO0wiNvsERdOgmkZkhxH2OpqTH/J+G9jPvMZoKpNxLAjM4jBkvBRgKx8L06NP6N0SFPMZTMCgGnnO8GGYsk6ogbSNVyIbzij7Ce35hub9A2nVw/Fr4k8ouiNxV8XX0wVlM2Lr5BBBi7Yf0PQdqvGCvBuVPZq9SyHiFn7SICyPiKojeFSR9Iz4Bn5cIywGhagc4HgZ1tsEaTEiiGpEeYmUPpU9lrKhXISUopsCusEVpJSZv8uS74aHhSGlkUSyQTfl3VNWGczFm+6qGu3J2D9A+rUVNQqS2k4nDNcvDLdPhFlHE1rzdv8DuRRrE8PhBfY8h+tXcAOyyUnxDaWsG2aeFaivAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;adapter pattern diagram&apos; title=&apos;&apos; src=&apos;/static/4dc33b3cdbf494a02953cce7dad6b296/ca1dc/adapter-image-1.png&apos; srcset=&apos;/static/4dc33b3cdbf494a02953cce7dad6b296/e7570/adapter-image-1.png 170w,
+/static/4dc33b3cdbf494a02953cce7dad6b296/f46e7/adapter-image-1.png 340w,
+/static/4dc33b3cdbf494a02953cce7dad6b296/ca1dc/adapter-image-1.png 680w,
+/static/4dc33b3cdbf494a02953cce7dad6b296/02d09/adapter-image-1.png 1020w,
+/static/4dc33b3cdbf494a02953cce7dad6b296/9d567/adapter-image-1.png 1360w,
+/static/4dc33b3cdbf494a02953cce7dad6b296/c371b/adapter-image-1.png 1654w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;adapter pattern diagram&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;기존의 Duck은 유지한 채 TurkeyAdapter로 새로운 인터페이스를 쉽게 호환시킬 수 있다. 이로 인해 &lt;em&gt;기존의 Client 측에서는 코드의 변경이 필요없게 된다.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;패턴을 활용한 리팩터링에서는 다음 조건을 모두 만족한다면 Adapter 패턴으로 리팩터링하는 것을 권장하고 있다.&lt;/p&gt;
 &lt;ol&gt;
