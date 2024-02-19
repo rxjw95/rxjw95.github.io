@@ -105,7 +105,7 @@ class WildTurkey implements Turkey{
 }
 ```
 
-![구조](https://user-images.githubusercontent.com/62179353/196026889-20531a01-1b11-4e2a-813d-bcfceb88a12c.png)
+![adapter pattern diagram](adapter-image-1.png)
 
 기존의 Duck은 유지한 채 TurkeyAdapter로 새로운 인터페이스를 쉽게 호환시킬 수 있다. 이로 인해 _기존의 Client 측에서는 코드의 변경이 필요없게 된다._
 
