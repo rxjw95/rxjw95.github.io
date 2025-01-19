@@ -3,9 +3,9 @@
 # -----------------------------------------------------------------------------
 
 title: Scribble # the website title (if blank, full name will be used instead)
-first_name: Ryu
+first_name: Jangwook
 middle_name:
-last_name:
+last_name: Ryu
 contact_note: >
   Contact Me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -86,7 +86,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Scribble # blog_name will be displayed in your blog page
-blog_description: Development Memo Site
+blog_description: 아무거나 끄적이는 곳
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
