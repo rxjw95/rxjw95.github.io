@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 3
 ---
 
 나도 한때는 ‘개발 잘하면 핵부자가 되지 않을까?’라는 순수한 마음을 가진 사람이었습니다.  
